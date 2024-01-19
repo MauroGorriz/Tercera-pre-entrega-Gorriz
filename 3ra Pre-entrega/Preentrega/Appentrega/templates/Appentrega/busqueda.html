@@ -1,0 +1,16 @@
+{% extends 'Appentrega/padre.html'%}
+{% load static %}
+{% block 1 %}Buscador de Bombas{% endblock %}
+{% block 2 %}
+{% endblock %}
+{% block 3 %}{% endblock %}
+{% block 5 %}Por el momento solo acepta Bombas Centrifugas{% endblock %} ##Tema claro
+{% block 6 %}
+
+<form action="/resultadobusqueda/" method="GET">
+    Ingrese la presión requerida (psi) : <input type="number" name="presion" step="">
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}
+{% block 7 %}{% endblock %}
