@@ -5,6 +5,7 @@ from django.db import models
 
 #Clase Bomba Centrifuga
 class BCentri(models.Model):
+
     modelo = models.CharField(max_length=40)
     materiales_carcaza = models.CharField(max_length=40)
     materiales_voluta = models.CharField(max_length=40)
@@ -16,6 +17,7 @@ class BCentri(models.Model):
 #Clase Bomba de tornillo
     
 class Btornillo(models.Model):
+
     modelo = models.CharField(max_length=40)
     materiales_carcaza = models.CharField(max_length=40)
     materiales_tornillo = models.CharField(max_length=40)
@@ -27,6 +29,7 @@ class Btornillo(models.Model):
 #Clase Bomba de engranajes
 
 class Bengranajes(models.Model):
+
     modelo = models.CharField(max_length=40)
     materiales_carcaza = models.CharField(max_length=40)
     materiales_engranajes = models.CharField(max_length=40)

@@ -1,26 +1,18 @@
 {% extends 'Appentrega/padre.html'%}
 {% load static %}
-{% block 1 %}
-
-<p>Los modelos disponibles son:</p>
-
-{% if Bcentri %}
-<ul>
-{% for x in Bcentri %}
-
-<li>{{x.modelo}}</li>
-
-{% endfor %}
-
-</ul>
-
-{% endif %}
-
+{% block 1 %}<p>Los modelos disponibles son:</p>
 {% endblock %}
-{% block 2 %}{% endblock %}
+{% block 2 %}
+{% endblock %}
 {% block 3 %}{% endblock %}
 ##Tema claro
-{% block 5 %}{% endblock %}
+{% block 5 %}
+<ul>
+ {% for x in DBusqueda %}
+<li>{{x.modelo}}</li>
+{% endfor %}
+</ul>
+{% endblock %}
 {% block 6 %}{% endblock %}
 {% block 7 %}{% endblock %}
 
